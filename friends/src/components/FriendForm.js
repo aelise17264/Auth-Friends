@@ -23,29 +23,30 @@ const onSubmit = (event) => {
 return(
     <div className='friendform'>
         <form onSubmit={onSubmit}>
-        <label>Name:</label>
+        <label>Name:
         <input
         placeholder='name'
         name='name'
         value={friend.name}
         onChange={handleChange}
         />
-
-        <label>Age:</label>
+</label>
+        <label>Age:
         <input
         placeholder='age'
         name='age'
         value={friend.age}
         onChange={handleChange}
         />
-        
-        <label>Email:</label>
+        </label>
+        <label>Email:
         <input
         placeholder='email'
         name='email'
         value={friend.email}
         onChange={handleChange}
         />
+        </label>
         <button type='submit'>Submit</button>
         </form>
 

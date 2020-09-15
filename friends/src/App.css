@@ -1,5 +1,36 @@
 .App {
   text-align: center;
+  background: url(https://cdn.gbposters.com/media/catalog/product/cache/1/image/9df78eab33525d08d6e5fb8d27136e95/f/r/friends-milkshake-maxi-poster-1.16.jpg);
+padding-top: 12%;
+}
+
+.friendslist{
+  background-color: aliceblue;
+  width: 50vw;
+  opacity: .9;
+  margin-left: 25%;
+  padding-bottom: 2%;
+  margin-bottom: 5%;
+}
+
+.friendform{
+  display: flex;
+  flex-direction: column;
+  background-color: lightslategrey;
+  opacity: .9;
+  width: 30vw;
+  margin-left: 25%;
+  height: 10vh;
+  align-items: center;
+  justify-content: space-evenly;
+  padding: 10%;
+  /* padding-top: 2%; */
+}
+
+label{
+  display: flex;
+  flex-direction: row;
+  margin-bottom: 20px
 }
 
 .App-logo {

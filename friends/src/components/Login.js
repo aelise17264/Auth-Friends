@@ -26,7 +26,7 @@ console.log(event)
     .then( res => {
         console.log(res.data.payload)
         localStorage.setItem('token', res.data.payload)
-        this.props.history.push('/protected')
+        this.props.history.push('/friends')
     })
     .catch(error => {
         console.log('error in post')

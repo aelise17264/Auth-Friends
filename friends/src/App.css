@@ -1,0 +1,70 @@
+.App {
+  text-align: center;
+  background: url(https://cdn.gbposters.com/media/catalog/product/cache/1/image/9df78eab33525d08d6e5fb8d27136e95/f/r/friends-milkshake-maxi-poster-1.16.jpg);
+padding-top: 12%;
+padding-bottom: 10%;
+}
+
+.friendslist{
+  background-color: aliceblue;
+  width: 50vw;
+  opacity: .9;
+  margin-left: 25%;
+  padding-bottom: 2%;
+  margin-bottom: 5%;
+}
+
+.friendform{
+  display: flex;
+  flex-direction: column;
+  background-color: lightslategrey;
+  opacity: .9;
+  width: 30vw;
+  margin-left: 25%;
+  height: 5vh;
+  align-items: center;
+  justify-content: space-evenly;
+  padding: 10%;
+margin-bottom: 20px;
+}
+
+label{
+  display: flex;
+  flex-direction: row;
+  margin-bottom: 20px
+}
+
+.App-logo {
+  height: 40vmin;
+  pointer-events: none;
+}
+
+@media (prefers-reduced-motion: no-preference) {
+  .App-logo {
+    animation: App-logo-spin infinite 20s linear;
+  }
+}
+
+.App-header {
+  background-color: #282c34;
+  min-height: 100vh;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  font-size: calc(10px + 2vmin);
+  color: white;
+}
+
+.App-link {
+  color: #61dafb;
+}
+
+@keyframes App-logo-spin {
+  from {
+    transform: rotate(0deg);
+  }
+  to {
+    transform: rotate(360deg);
+  }
+}

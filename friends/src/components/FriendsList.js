@@ -1,8 +1,7 @@
 import React from "react";
-// import moment from "moment";
-// import Loader from "react-loader-spinner";
+
 import { axiosWithAuth } from "../utils/axiosWithAuth";
-import FriendForm from './FriendForm'
+import FriendForm from './FriendForm';
 
 class FriendsList extends React.Component {
 
@@ -19,14 +18,13 @@ getData = () => {
     .then (res => {
         console.log(res.data)
     this.setState({
-        
         friendsList: res.data
-        
     })
     })
     .catch(error => {
         console.log('error in getData')
     })
+
 }
 
 postFriend = (newFriend) => {
@@ -44,6 +42,8 @@ postFriend = (newFriend) => {
     })
 }
 
+
+
 render(){
    
     return(
@@ -59,7 +59,10 @@ render(){
                 </div>
             ))}
         </div>
+   
+
     <FriendForm postFriend={this.postFriend}/>
+
 </>
     )
 }

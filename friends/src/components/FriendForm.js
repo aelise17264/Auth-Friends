@@ -15,13 +15,16 @@ const handleChange = (event) => {
     })
 }
 const onSubmit = (event) => {
-    event.preventDefault();
+    // event.preventDefault();
     postFriend(friend)
     console.log(friend)
 }
 
+
+
 return(
     <div className='friendform'>
+        <h3>Add A Friend</h3>
         <form onSubmit={onSubmit}>
         <label>Name:
         <input

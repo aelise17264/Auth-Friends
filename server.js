@@ -59,6 +59,9 @@ function authenticator(req, res, next) {
     res.status(403).json({ error: 'User must be logged in to do that.' });
   }
 }
+server.get('/api/login', (req, res) => {
+  res.status(200).json({ env: process.env.NODE_ENV})
+})
 
 server.post('/api/login', (req, res) => {
   const { username, password } = req.body;
